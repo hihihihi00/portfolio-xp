@@ -1,0 +1,81 @@
+@media (max-width: 720px) {
+  .win {
+    left: 100px;
+    top: 7%;
+    width: calc(100% - 112px);
+    max-width: none;
+  }
+  .sidebar {
+    display: none;
+  }
+  .welcome {
+    padding: 23px 20px;
+  }
+  .welcome h1 {
+    font-size: 28px;
+  }
+  .body {
+    height: min(440px, 65vh);
+  }
+  .folders {
+    padding: 12px;
+    gap: 0;
+    flex-wrap: wrap;
+  }
+  .signature {
+    right: 20px;
+    bottom: 18px;
+  }
+  .signature strong {
+    font-size: 30px;
+  }
+  .task {
+    min-width: 110px;
+    width: 130px;
+    margin-left: 5px;
+  }
+  .tray {
+    padding: 0 9px;
+    gap: 6px;
+  }
+  .icons {
+    left: 8px;
+  }
+  .page {
+    padding: 20px;
+  }
+  .menu {
+    font-size: 10px;
+    word-spacing: 5px;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .win {
+    animation: appear 0.18s ease-out;
+  }
+  @keyframes appear {
+    from {
+      opacity: 0;
+      transform: scale(0.98);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+.sample-note {
+  color: #7b8493;
+  font-size: 11px;
+}
+.center {
+  text-align: center;
+}
+.muted {
+  color: #888;
+}
+.trash-icon {
+  font-size: 52px;
+  text-align: center;
+}
+

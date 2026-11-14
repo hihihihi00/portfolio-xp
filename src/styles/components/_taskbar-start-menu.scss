@@ -1,0 +1,93 @@
+.taskbar {
+  position: fixed;
+  bottom: 0;
+  height: 36px;
+  background: linear-gradient(#368bff, #235ce0 15%, #245edb 85%, #1744ac);
+  width: 100%;
+  display: flex;
+  z-index: 9999;
+  color: white;
+  align-items: center;
+  box-shadow: 0 -1px 3px #1e4c97;
+}
+.start {
+  height: 36px;
+  width: 113px;
+  border: 0;
+  color: white;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: bold;
+  border-radius: 0 12px 12px 0;
+  text-shadow: 1px 1px #154b1d;
+  background: linear-gradient(#80ba6a, #368c30 20%, #398c2d 80%, #23651c);
+  box-shadow: inset 0 2px 3px #c9e6b4;
+}
+.flag {
+  font-style: normal;
+  margin-right: 5px;
+}
+.task {
+  height: 28px;
+  margin-left: 12px;
+  min-width: 170px;
+  text-align: left;
+  background: #1b4eb9;
+  color: white;
+  border: 1px solid #1547ab;
+  border-radius: 3px;
+  box-shadow: inset 1px 1px 3px #11357d;
+  padding: 0 12px;
+}
+.tray {
+  margin-left: auto;
+  height: 100%;
+  background: linear-gradient(#1db6ef, #1195df);
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  gap: 17px;
+  border-left: 1px solid #0a68c3;
+}
+.startmenu {
+  position: fixed;
+  left: 0;
+  bottom: 36px;
+  width: 330px;
+  background: #fff;
+  border: 2px solid #1c5dd7;
+  z-index: 10000;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 3px -2px 15px #0004;
+}
+.user {
+  padding: 16px;
+  background: linear-gradient(#1553b7, #398bed);
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+}
+.startitems {
+  padding: 10px;
+}
+.startitems button {
+  width: 100%;
+  padding: 13px;
+  border: 0;
+  background: white;
+  text-align: left;
+  font-size: 14px;
+}
+.startitems button:hover {
+  background: #316ac5;
+  color: white;
+}
+.power {
+  padding: 10px;
+  background: #d6e5fa;
+  text-align: right;
+}
+.power button {
+  display: inline-flex;
+  align-items: center;
+}

@@ -1,0 +1,154 @@
+// Fixed local SVG artwork: no platform emoji fonts are used for interface icons.
+.xp-icon {
+  display: inline-block;
+  vertical-align: -0.2em;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex-shrink: 0;
+  user-select: none;
+  pointer-events: none;
+}
+.ico .xp-icon {
+  display: block;
+  width: 42px;
+  height: 42px;
+  margin: 0 auto;
+  filter: drop-shadow(1px 2px 1px #173c6155);
+}
+.folder > span .xp-icon {
+  width: 40px;
+  height: 40px;
+}
+#windowtitle .xp-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+  vertical-align: -4px;
+}
+.address .xp-icon {
+  width: 16px;
+  height: 16px;
+  vertical-align: -3px;
+}
+.sidebox button .xp-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  vertical-align: -3px;
+}
+.toolbar-extra .xp-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+}
+.toolbar-display .back .xp-icon {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+.task span .xp-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 7px;
+  vertical-align: -4px;
+}
+.flag .xp-icon {
+  width: 25px;
+  height: 25px;
+  vertical-align: -5px;
+}
+.tray .xp-icon {
+  width: 18px;
+  height: 18px;
+}
+.user .xp-icon {
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.startitems .xp-icon {
+  width: 27px;
+  height: 27px;
+  margin-right: 12px;
+  vertical-align: middle;
+}
+.power .xp-icon {
+  width: 23px;
+  height: 23px;
+  margin-right: 5px;
+}
+.mobile-computer .xp-icon {
+  width: 52px;
+  height: 52px;
+}
+.mobile-brand .xp-icon {
+  width: 32px;
+  height: 32px;
+  vertical-align: -5px;
+}
+.work-file-icon .xp-icon {
+  width: 32px;
+  height: 32px;
+}
+.work-award .xp-icon {
+  width: 19px;
+  height: 19px;
+}
+.trash-icon .xp-icon {
+  width: 70px;
+  height: 70px;
+}
+.paint-tools button .xp-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+}
+.power-actions span .xp-icon {
+  width: 35px;
+  height: 35px;
+}
+.power-off button .xp-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+#status .xp-icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 4px;
+  vertical-align: -3px;
+}
+@media (max-width: 720px) {
+  .ico .xp-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .startitems .xp-icon {
+    width: 32px;
+    height: 32px;
+  }
+  .win-home .title > #windowtitle:after {
+    content: "ようこそ";
+  }
+  .win-home #windowtitle .xp-icon {
+    width: 21px;
+    height: 21px;
+    vertical-align: middle;
+  }
+  .work-file-icon .xp-icon {
+    width: 28px;
+    height: 28px;
+  }
+  .mobile-welcome .mobile-computer .xp-icon {
+    width: 43px;
+    height: 43px;
+  }
+}
+@media (max-width: 720px) and (max-height: 690px) {
+  .ico .xp-icon {
+    width: 32px;
+    height: 32px;
+  }
+}

@@ -1,0 +1,81 @@
+.paint-app {
+  background: #ece9d8;
+  min-height: 100%;
+  color: #222;
+}
+.paint-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 8px;
+  border-bottom: 1px solid #b8b5a3;
+  button {
+    min-height: 32px;
+    border: 1px solid #aaa58e;
+    background: linear-gradient(white, #ece9d8);
+    padding: 4px 8px;
+    border-radius: 2px;
+    &.selected {
+      background: #d2e2fb;
+      border-color: #3864ad;
+    }
+    &:disabled {
+      opacity: 0.4;
+      cursor: default;
+    }
+  }
+  label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    input {
+      width: 75px;
+    }
+    span {
+      min-width: 20px;
+    }
+  }
+}
+.paint-palette {
+  padding: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+  button {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #797969;
+    box-shadow: inset 1px 1px #fff7;
+    &.active {
+      outline: 2px solid #1557c4;
+      outline-offset: 1px;
+    }
+  }
+  input {
+    width: 30px;
+    height: 27px;
+    padding: 0;
+    border: 0;
+  }
+}
+.paint-workspace {
+  padding: 12px;
+  background: #92928a;
+  canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1000/650;
+    background: white;
+    touch-action: none;
+    cursor: crosshair;
+    box-shadow: 1px 1px 2px #333;
+  }
+}
+.paint-hint {
+  font-size: 11px;
+  margin: 0;
+  padding: 8px;
+  line-height: 1.6;
+}

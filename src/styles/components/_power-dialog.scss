@@ -1,0 +1,122 @@
+.power-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 15000;
+  background: #0007;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+}
+.power-dialog {
+  width: 400px;
+  max-width: 100%;
+  color: white;
+  background: linear-gradient(#719be4, #4d78c8);
+  border: 2px solid #0b49a6;
+  border-radius: 8px;
+  box-shadow: 0 12px 50px #0008;
+  overflow: hidden;
+  header {
+    padding: 18px 22px;
+    font-size: 22px;
+    background: linear-gradient(#1959bb, #0b3b8b);
+    border-bottom: 1px solid #9cbdf3;
+  }
+  p {
+    padding: 0 22px;
+    font-size: 14px;
+  }
+  footer {
+    padding: 14px;
+    background: #173f92;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer small {
+    font-size: 11px;
+  }
+  footer button {
+    padding: 7px 13px;
+    border: 1px solid #fff;
+    background: #ece9d8;
+    color: #17213d;
+    border-radius: 3px;
+  }
+}
+.power-actions {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 15px 20px 30px;
+  button {
+    border: 0;
+    background: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+  }
+  span {
+    display: grid;
+    place-items: center;
+    width: 56px;
+    height: 56px;
+    border: 2px solid #ffffffb0;
+    border-radius: 8px;
+    color: white;
+    font-size: 37px;
+    box-shadow:
+      inset 1px 1px 5px #fff9,
+      2px 3px 5px #15345d66;
+  }
+  .power-red {
+    background: linear-gradient(#fca466, #db3e1b);
+  }
+  .power-green {
+    background: linear-gradient(#a7dc72, #3e9c2d);
+  }
+}
+.power-off {
+  position: fixed;
+  inset: 0;
+  background: #070707;
+  color: white;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.power-off-brand {
+  font:
+    54px Tahoma,
+    sans-serif;
+  letter-spacing: -2px;
+  span {
+    font-size: 33px;
+    vertical-align: super;
+    color: #e98731;
+  }
+}
+.power-off h1 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #e39851;
+  margin: 30px 0;
+}
+.power-off p {
+  color: #aaa;
+}
+.power-off button {
+  background: linear-gradient(#7eae66, #2d7a24);
+  color: white;
+  border: 1px solid #a5bd9b;
+  border-radius: 5px;
+  padding: 13px 28px;
+  font-size: 16px;
+  margin-top: 20px;
+}

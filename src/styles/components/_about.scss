@@ -1,0 +1,61 @@
+.about-records {
+  margin-top: 26px;
+  border-top: 1px solid #d4dce8;
+  padding-top: 18px;
+  h3 {
+    font-size: 16px;
+    color: #17213d;
+    margin: 0 0 12px;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: grid;
+    grid-template-columns: 94px minmax(0, 1fr);
+    gap: 12px;
+    padding: 10px 0;
+    font-size: 12px;
+    line-height: 1.8;
+    align-items: start;
+  }
+  li + li {
+    border-top: 1px solid #eef1f5;
+  }
+  .record-date {
+    font-size: 11px;
+    color: #758298;
+    white-space: nowrap;
+  }
+  .record-description {
+    font-size: 11px;
+    color: #65748a;
+    line-height: 1.8;
+    margin: 3px 0 0;
+  }
+}
+@media (max-width: 720px) {
+  .about-records {
+    h3 {
+      font-size: 17px;
+    }
+    li {
+      grid-template-columns: 1fr;
+      gap: 2px;
+      font-size: 14px;
+      padding: 11px 0;
+    }
+    .record-date {
+      font-size: 12px;
+    }
+    .record-date:empty {
+      display: none;
+    }
+    .record-description {
+      font-size: 12px;
+    }
+  }
+}
+

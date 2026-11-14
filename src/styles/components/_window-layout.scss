@@ -1,0 +1,148 @@
+// Keep the title, address and task buttons aligned as the window changes size.
+.title > #windowtitle {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-right: 10px;
+  line-height: 1.4;
+}
+.controls {
+  flex-shrink: 0;
+  align-items: center;
+}
+.controls button {
+  display: grid;
+  place-items: center;
+  padding: 0;
+  line-height: 1;
+}
+.address {
+  align-items: center;
+  min-width: 0;
+  flex-shrink: 0;
+}
+.address label {
+  flex-shrink: 0;
+  font-size: 11px;
+}
+.address #address {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1.5;
+}
+.address #homebtn {
+  flex-shrink: 0;
+  white-space: nowrap;
+  padding: 4px 8px;
+}
+.body {
+  min-width: 0;
+  min-height: 0;
+}
+.sidebar {
+  overflow-x: hidden;
+}
+.sidebox button {
+  max-width: 100%;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.content {
+  min-width: 0;
+  overflow-x: hidden;
+}
+.folders {
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.folder {
+  min-width: 0;
+}
+.status {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.taskbar {
+  align-items: center;
+  gap: 0;
+}
+.task {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  flex: 0 1 220px;
+  max-width: 220px;
+  overflow: hidden;
+  line-height: 1.2;
+  box-shadow: inset 1px 1px 2px #ffffff50;
+  background: #387ce4;
+}
+.task span {
+  display: block;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.task.task-active {
+  background: #1b4eb9;
+  box-shadow: inset 1px 1px 3px #11357d;
+}
+.start,
+.tray {
+  flex-shrink: 0;
+}
+@media (min-width: 721px) {
+  .win {
+    --window-x: clamp(104px, 12vw, 160px);
+    --window-y: min(6vh, 48px);
+    left: var(--window-x);
+    top: var(--window-y);
+    width: min(820px, calc(100% - var(--window-x) - 12px));
+    max-width: calc(100% - var(--window-x) - 12px);
+    max-height: calc(100% - var(--window-y) - 12px);
+  }
+  .win.max {
+    max-width: none !important;
+    max-height: none !important;
+  }
+  .sidebar {
+    width: 180px;
+    padding: 14px 10px;
+  }
+  .sidebox div {
+    padding: 8px 6px;
+  }
+  .sidebox button {
+    font-size: 11px;
+  }
+}
+@media (max-width: 720px) {
+  .win.win-page,
+  .win.win-page.max {
+    max-height: none !important;
+  }
+  .address label {
+    display: none;
+  }
+  .address {
+    gap: 6px;
+  }
+  .address #address {
+    font-size: 12px;
+  }
+  .task {
+    flex: 0 1 190px;
+    max-width: calc(100vw - 226px);
+    margin-left: 6px;
+  }
+  .win-home #windowtitle {
+    margin-right: 4px;
+  }
+}
+

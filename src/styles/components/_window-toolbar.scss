@@ -1,0 +1,64 @@
+.toolbar-display {
+  min-height: 42px;
+  flex-shrink: 0;
+  gap: 12px;
+  cursor: default;
+  user-select: none;
+}
+.toolbar-display .back-display {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  white-space: nowrap;
+  line-height: 1;
+}
+.toolbar-display .back {
+  display: inline-block;
+  font-size: 26px;
+  line-height: 1;
+}
+.toolbar-display .toolbar-divider {
+  color: #aaa;
+}
+@media (max-width: 720px) {
+  .win-page .toolbar-display {
+    min-height: 44px;
+    height: 44px;
+  }
+  .toolbar-display > .back-display,
+  .toolbar-display > .toolbar-divider {
+    display: inline-flex;
+  }
+  .toolbar-display > .toolbar-extra {
+    display: none;
+  }
+}
+
+.toolbar-display button.back-display {
+  border: 1px solid transparent;
+  background: none;
+  color: #222;
+  font: inherit;
+  padding: 5px 7px;
+  min-height: 32px;
+  cursor: pointer;
+}
+.toolbar-display button.back-display:hover:not(:disabled) {
+  border-color: #a4b6ce;
+  background: #edf3fc;
+  border-radius: 3px;
+}
+.toolbar-display button.back-display:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+@media (max-width: 720px) {
+  .toolbar-display button.back-display {
+    display: inline-flex;
+    min-height: 40px;
+    min-width: 76px;
+    padding: 4px 7px;
+    font-size: 15px;
+  }
+}
+

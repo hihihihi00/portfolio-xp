@@ -1,0 +1,158 @@
+.works-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 8px 0 14px;
+  h2 {
+    margin: 0;
+  }
+  > span {
+    font-size: 11px;
+    color: #587292;
+    background: #edf3fc;
+    border: 1px solid #c5d5eb;
+    padding: 5px 8px;
+    white-space: nowrap;
+  }
+}
+.works-page .works-intro {
+  font-size: 12px;
+  line-height: 1.9;
+  color: #5c6a7c;
+  margin: 0 0 24px;
+}
+.work-entry {
+  border: 1px solid #c3d0e2;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background: white;
+}
+.work-entry-header {
+  display: flex;
+  gap: 13px;
+  align-items: flex-start;
+  padding: 16px;
+  background: linear-gradient(110deg, #eef4fd, #fff);
+  border-bottom: 1px solid #d6e0ed;
+  > div {
+    min-width: 0;
+  }
+  h3 {
+    font-size: 17px;
+    color: #214883;
+    margin: 6px 0 7px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+  }
+  .work-role {
+    font-size: 11px;
+    color: #617087;
+    margin: 0;
+    line-height: 1.7;
+  }
+}
+.work-file-icon {
+  font-size: 30px;
+  flex-shrink: 0;
+  line-height: 1.3;
+}
+.work-year {
+  font-size: 11px;
+  color: #486996;
+  letter-spacing: 0.5px;
+}
+.work-details {
+  padding: 15px 18px 18px;
+  h4 {
+    font-size: 11px;
+    font-weight: bold;
+    color: #47658c;
+    margin: 0 0 8px;
+  }
+  > ul:not(.work-tech) {
+    margin: 0 0 18px;
+    padding-left: 18px;
+    font-size: 12px;
+    color: #35465c;
+    line-height: 1.95;
+    li + li {
+      margin-top: 4px;
+    }
+  }
+}
+.work-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    font-size: 10px;
+    line-height: 1.5;
+    background: #f2f5fa;
+    border: 1px solid #d5dfed;
+    color: #3d597c;
+    padding: 3px 6px;
+    border-radius: 2px;
+  }
+  .work-tech-other {
+    border: 0;
+    background: none;
+    color: #798697;
+  }
+}
+.works-page .work-award {
+  font-size: 12px;
+  line-height: 1.8;
+  color: #75541a;
+  background: #fff8df;
+  border: 1px solid #ebd998;
+  padding: 10px 12px;
+  margin: 0 0 18px;
+}
+@media (max-width: 720px) {
+  .works-page {
+    padding: 20px 14px;
+  }
+  .works-header > span {
+    font-size: 10px;
+  }
+  .works-page .works-intro {
+    font-size: 13px;
+  }
+  .work-entry-header {
+    padding: 13px 12px;
+    gap: 10px;
+    h3 {
+      font-size: 17px;
+      line-height: 1.55;
+    }
+    .work-role {
+      font-size: 12px;
+    }
+  }
+  .work-file-icon {
+    font-size: 26px;
+  }
+  .work-details {
+    padding: 14px;
+    h4 {
+      font-size: 12px;
+    }
+    > ul:not(.work-tech) {
+      font-size: 13px;
+      line-height: 1.9;
+    }
+  }
+  .work-tech li {
+    font-size: 11px;
+  }
+  .works-page .work-award {
+    font-size: 12px;
+  }
+}
+

@@ -1,0 +1,95 @@
+@media (max-width: 720px) {
+  .resize-handle {
+    display: none;
+  }
+  .paint-tools button {
+    min-height: 44px;
+  }
+  .paint-palette {
+    gap: 8px;
+  }
+  .paint-palette button {
+    width: 30px;
+    height: 30px;
+  }
+  .paint-tools label input {
+    min-height: 34px;
+  }
+  .paint-workspace {
+    padding: 8px;
+  }
+  .paint-hint {
+    font-size: 12px;
+  }
+  .icons {
+    top: 100px;
+    gap: 2px 36px;
+  }
+  .icon {
+    min-height: 79px;
+    font-size: 14px;
+  }
+  .ico {
+    font-size: 33px;
+  }
+  .win.win-home,
+  .win.win-home.max {
+    max-height: calc(100% - 355px);
+  }
+  .mobile-welcome .mobile-computer {
+    font-size: 32px;
+    margin: 8px 0;
+  }
+  .mobile-welcome {
+    padding: 14px 10px;
+  }
+}
+@media (max-width: 720px) and (max-height: 690px) {
+  .icons {
+    top: 76px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+    width: 95%;
+  }
+  .icon {
+    min-height: 70px;
+    font-size: 12px;
+  }
+  .ico {
+    font-size: 29px;
+  }
+  .win.win-home,
+  .win.win-home.max {
+    max-height: calc(100% - 232px);
+  }
+  .mobile-welcome {
+    padding: 10px;
+  }
+  .mobile-welcome .mobile-computer {
+    display: none;
+  }
+  .mobile-welcome h1 {
+    font-size: 18px;
+  }
+  .mobile-welcome button {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 720px) and (orientation: landscape) {
+  .icons {
+    width: 45%;
+    top: 64px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .win.win-home,
+  .win.win-home.max {
+    max-height: calc(100% - 24px);
+  }
+}
+@media (min-width: 721px) {
+  .win.max {
+    max-height: none;
+    max-width: none;
+  }
+}
+

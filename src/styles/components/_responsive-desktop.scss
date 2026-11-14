@@ -1,0 +1,446 @@
+@media (max-width: 720px) {
+  :root {
+    --bar-height: calc(48px + env(safe-area-inset-bottom, 0px));
+  }
+  body {
+    font-size: 14px;
+  }
+  .desktop {
+    bottom: var(--bar-height);
+    overflow: hidden;
+  }
+  .wall {
+    height: 100dvh;
+  }
+  .signature {
+    top: 24px;
+    left: 24px;
+    right: auto;
+    bottom: auto;
+    text-align: left;
+    pointer-events: none;
+  }
+  .signature > small,
+  .signature > strong,
+  .signature > p {
+    display: none;
+  }
+  .mobile-brand {
+    display: block;
+    color: white;
+    font-size: 32px;
+    text-shadow: 1px 2px #184f8a;
+  }
+  .mobile-brand strong {
+    font-size: 27px;
+    display: inline;
+    font-weight: 700;
+    letter-spacing: -1px;
+  }
+  .mobile-brand i {
+    display: block;
+    font-size: 14px;
+    margin-left: 34px;
+    letter-spacing: 0;
+  }
+  .icons {
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(320px, 90%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 42px;
+  }
+  .icon {
+    width: 100%;
+    min-height: 92px;
+    font-size: 15px;
+    padding: 5px;
+  }
+  .ico {
+    font-size: 43px;
+    margin-bottom: 3px;
+  }
+  .icon[data-open="home"] {
+    display: none;
+  }
+  .win {
+    border-radius: 8px 8px 0 0;
+    box-shadow: 2px 4px 12px #0005;
+  }
+  .win.win-home,
+  .win.win-home.max {
+    left: 14px !important;
+    right: 14px !important;
+    top: auto !important;
+    bottom: 16px !important;
+    width: auto !important;
+    max-width: none !important;
+    height: auto !important;
+    max-height: calc(100% - 318px);
+    display: flex;
+    flex-direction: column;
+  }
+  .win-home .menu,
+  .win-home .toolbar,
+  .win-home .address,
+  .win-home .status,
+  .win-home .sidebar,
+  .win-home .welcome,
+  .win-home .folders {
+    display: none;
+  }
+  .win-home .body,
+  .win-home.max .body {
+    display: block;
+    height: auto;
+    overflow: auto;
+  }
+  .win-home .content {
+    overflow: visible;
+  }
+  .win-home .title > span {
+    font-size: 0;
+  }
+  .win-home .title > span:after {
+    content: "▦ ようこそ";
+    font-size: 17px;
+  }
+  .mobile-welcome {
+    display: block;
+    text-align: center;
+    padding: 18px 12px;
+    background: #fffce8;
+    h1 {
+      font-size: 22px;
+      line-height: 1.4;
+      margin: 0 0 6px;
+      color: #182233;
+    }
+    p {
+      font-size: 14px;
+      margin: 0;
+    }
+    .mobile-computer {
+      font-size: 42px;
+      margin: 12px 0;
+    }
+    button {
+      min-height: 48px;
+      width: 90%;
+      padding: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #17213d;
+      background: linear-gradient(white, #d8e5fc);
+      border: 2px solid #2855b4;
+      border-radius: 4px;
+      box-shadow: inset 2px 2px white;
+    }
+  }
+  .win.win-page,
+  .win.win-page.max {
+    inset: 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+  }
+  .title {
+    height: 48px;
+    min-height: 48px;
+    font-size: 18px;
+    padding-left: 10px;
+    cursor: default;
+    touch-action: auto;
+  }
+  .controls button {
+    width: 38px;
+    height: 38px;
+    font-size: 26px;
+  }
+  .win-page .controls button:not(.close) {
+    display: none;
+  }
+  .controls {
+    gap: 4px;
+  }
+  .win-home .controls button {
+    width: 32px;
+    height: 34px;
+    font-size: 22px;
+  }
+  .win-page .menu,
+  .win-page .sidebar,
+  .win-page .status {
+    display: none;
+  }
+  .win-page .toolbar {
+    height: 48px;
+    min-height: 48px;
+    padding: 0 10px;
+  }
+  .toolbar button {
+    min-width: 70px;
+    min-height: 44px;
+    font-size: 15px;
+  }
+  .toolbar > span {
+    display: none;
+  }
+  .address {
+    min-height: 42px;
+    font-size: 0;
+    align-items: center;
+    padding: 3px 8px;
+    gap: 0;
+  }
+  .address > span {
+    font-size: 12px;
+    padding: 6px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .address > button {
+    font-size: 12px;
+    min-height: 34px;
+  }
+  .win-page .body,
+  .win-page.max .body {
+    height: auto;
+    flex: 1;
+    min-height: 0;
+  }
+  .content {
+    width: 100%;
+    min-width: 0;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+  .page {
+    padding: 22px 18px;
+  }
+  .page h2 {
+    font-size: 27px;
+    margin-bottom: 15px;
+  }
+  .page p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  .note {
+    font-size: 12px;
+    line-height: 1.7;
+  }
+  .chip {
+    font-size: 14px;
+  }
+  .project {
+    gap: 14px;
+    padding: 20px 0;
+    align-items: center;
+  }
+  .project > div:last-child {
+    min-width: 0;
+  }
+  .project b {
+    font-size: 17px;
+  }
+  .project p {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  .project small {
+    font-size: 10px;
+  }
+  .project .art {
+    width: 116px;
+    min-width: 116px;
+    height: 104px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #315e9f;
+    border-radius: 3px;
+    overflow: hidden;
+    justify-content: space-between;
+    background: linear-gradient(130deg, #fff, #bfdcf5);
+  }
+  .art .preview-top {
+    display: block;
+    width: 100%;
+    font-size: 9px;
+    padding: 3px;
+    background: white;
+    color: #2868b8;
+    letter-spacing: 5px;
+  }
+  .art > span {
+    font-size: 32px;
+    line-height: 1;
+  }
+  .art small {
+    display: block;
+    padding: 5px;
+    font-size: 9px;
+    color: #174689;
+  }
+  .project .art--02 {
+    background: #fff8d8;
+  }
+  .project .art--03 {
+    background: linear-gradient(#5ab3f4 60%, #79b435 60%);
+  }
+  .taskbar {
+    height: var(--bar-height);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    align-items: stretch;
+  }
+  .start {
+    height: 48px;
+    width: 112px;
+    font-size: 23px;
+    flex-shrink: 0;
+  }
+  .task {
+    align-self: center;
+    min-width: 0;
+    width: auto;
+    max-width: calc(100vw - 226px);
+    height: 34px;
+    font-size: 11px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 8px;
+  }
+  .tray {
+    padding: 0 10px;
+    gap: 8px;
+    font-size: 13px;
+    align-items: center;
+  }
+  .startmenu {
+    left: 8px;
+    right: 8px;
+    bottom: var(--bar-height);
+    width: auto;
+    max-height: calc(100dvh - var(--bar-height) - 55px);
+    overflow: auto;
+    border-radius: 9px 9px 0 0;
+  }
+  .user {
+    font-size: 25px;
+    padding: 20px 16px;
+    background: linear-gradient(#3d94ff, #0953d8);
+  }
+  .startitems {
+    padding: 0;
+    background: #fffcef;
+  }
+  .startitems button {
+    min-height: 61px;
+    padding: 15px 20px;
+    font-size: 19px;
+    border-bottom: 1px solid #d3d0bc;
+    background: #fffcef;
+  }
+  .power {
+    padding: 12px;
+  }
+  .power button {
+    min-height: 46px;
+    font-size: 17px;
+    border: 0;
+    background: none;
+  }
+  .boot-footer {
+    left: 18px;
+    right: 18px;
+    bottom: 24px;
+    font-size: 9px;
+  }
+  .boot-brand h1 {
+    font-size: 62px;
+  }
+  .boot-welcome {
+    font-size: 40px;
+  }
+}
+@media (max-width: 720px) and (max-height: 690px) {
+  .icons {
+    top: 85px;
+    gap: 2px 38px;
+  }
+  .icon {
+    min-height: 76px;
+  }
+  .ico {
+    font-size: 32px;
+  }
+  .signature {
+    top: 12px;
+  }
+  .mobile-brand strong {
+    font-size: 23px;
+  }
+  .mobile-brand i {
+    font-size: 12px;
+  }
+  .win.win-home,
+  .win.win-home.max {
+    max-height: calc(100% - 245px);
+    bottom: 8px !important;
+  }
+  .mobile-welcome {
+    padding: 12px 8px;
+  }
+  .mobile-welcome h1 {
+    font-size: 19px;
+  }
+  .mobile-welcome .mobile-computer {
+    font-size: 29px;
+    margin: 6px 0;
+  }
+}
+@media (max-width: 720px) and (orientation: landscape) {
+  .desktop {
+    overflow: auto;
+  }
+  .icons {
+    top: 85px;
+    left: 15px;
+    transform: none;
+    width: 42%;
+    gap: 4px;
+  }
+  .win.win-home,
+  .win.win-home.max {
+    left: 48% !important;
+    right: 12px !important;
+    top: 12px !important;
+    bottom: auto !important;
+    max-height: calc(100% - 24px);
+  }
+  .mobile-welcome .mobile-computer {
+    display: none;
+  }
+  .mobile-brand i {
+    display: none;
+  }
+  .signature {
+    top: 10px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .boot-progress div {
+    animation: none;
+    transform: translateX(64px);
+  }
+  .boot * {
+    transition: none;
+  }
+}
+

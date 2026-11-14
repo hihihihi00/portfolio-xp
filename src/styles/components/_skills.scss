@@ -1,0 +1,22 @@
+// Original skill-list layout: headings and technology tags only.
+.simple-skills h3 {
+  font-size: 16px;
+  margin: 24px 0 12px;
+  color: #17213d;
+}
+.simple-skills .chips {
+  gap: 8px;
+}
+.simple-skills .chip {
+  font-size: 12px;
+  line-height: 1.5;
+}
+@media (max-width: 720px) {
+  .simple-skills h3 {
+    font-size: 17px;
+  }
+  .simple-skills .chip {
+    font-size: 14px;
+  }
+}
+

@@ -1,0 +1,149 @@
+// Opening sequence, styled independently so it cannot block desktop loading.
+.boot {
+  position: fixed;
+  inset: 0;
+  z-index: 20000;
+  background: #050505;
+  color: #fff;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.boot-center {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  width: min(340px, 85vw);
+  text-align: center;
+}
+.xp-mark {
+  width: 102px;
+  height: 90px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  margin: 0 auto 18px;
+  transform: skewY(-9deg) rotate(6deg);
+  filter: drop-shadow(0 0 12px #ffffff15);
+  i {
+    background: linear-gradient(135deg, #ffb64b, #e9411b);
+    border-radius: 8px 0 0 0;
+    &:nth-child(2) {
+      background: linear-gradient(135deg, #a6d747, #51a328);
+    }
+    &:nth-child(3) {
+      background: linear-gradient(135deg, #54adfa, #1864d0);
+    }
+    &:nth-child(4) {
+      background: linear-gradient(135deg, #ffe56a, #efb41d);
+    }
+  }
+}
+.boot-brand {
+  small {
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #c0c0c0;
+  }
+  h1 {
+    font-size: 68px;
+    font-weight: 500;
+    letter-spacing: -3px;
+    margin: 4px 0 40px;
+  }
+  span {
+    font-size: 40px;
+    color: #ed7d23;
+    vertical-align: super;
+    letter-spacing: -2px;
+    margin-left: 5px;
+  }
+}
+.boot-progress {
+  width: 175px;
+  height: 19px;
+  border: 1px solid #8e8e9c;
+  border-radius: 4px;
+  margin: auto;
+  padding: 2px;
+  overflow: hidden;
+  div {
+    display: flex;
+    gap: 3px;
+    width: max-content;
+    animation: boot-slide 1.3s linear infinite;
+  }
+  i {
+    width: 11px;
+    height: 12px;
+    background: linear-gradient(#8bb6ff, #2657c9, #4385ed);
+  }
+}
+.boot-center p {
+  font-size: 11px;
+  color: #999;
+  margin-top: 20px;
+}
+.boot-footer {
+  position: absolute;
+  bottom: 32px;
+  left: 30px;
+  right: 30px;
+  display: flex;
+  justify-content: space-between;
+  color: #909090;
+  font-size: 11px;
+}
+.boot-skip {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  color: #ddd;
+  border: 1px solid #555;
+  background: #171717;
+  padding: 12px 16px;
+  border-radius: 3px;
+}
+.boot--welcome {
+  background: linear-gradient(#174cb4 0 15%, #6284d8 15% 83%, #174cb4 83%);
+}
+.boot-welcome {
+  font-size: 48px;
+  font-style: italic;
+  text-shadow: 2px 3px #2f57a1;
+}
+.boot--welcome .boot-center {
+  top: 50%;
+}
+.boot--welcome .boot-footer {
+  color: #d7e0fb;
+}
+.boot--welcome .boot-skip {
+  background: #1b4aa0;
+  border-color: #abc3f4;
+}
+@keyframes boot-slide {
+  from {
+    transform: translateX(-43px);
+  }
+  to {
+    transform: translateX(173px);
+  }
+}
+.mobile-welcome,
+.mobile-brand {
+  display: none;
+}
+.menu-scrim {
+  position: fixed;
+  inset: 0;
+  border: 0;
+  background: #0002;
+  z-index: 9998;
+}
+.preview-top,
+.art small {
+  display: none;
+}
+.art > span {
+  font-size: 32px;
+}

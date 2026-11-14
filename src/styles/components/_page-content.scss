@@ -1,0 +1,64 @@
+.page {
+  padding: 25px 28px;
+}
+.page h2 {
+  color: #1a438a;
+  font-size: 25px;
+  margin-top: 0;
+}
+.page p {
+  line-height: 1.9;
+}
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.chip {
+  padding: 8px 12px;
+  border: 1px solid #cbd8e9;
+  background: #f2f6fc;
+  color: #31547e;
+}
+.project {
+  border-bottom: 1px solid #dce2eb;
+  padding: 15px 0;
+  display: flex;
+  gap: 15px;
+}
+.project .art {
+  width: 75px;
+  min-width: 75px;
+  height: 65px;
+  background: #e8eef9;
+  display: grid;
+  place-items: center;
+  font-size: 32px;
+}
+.project b {
+  font-size: 14px;
+  color: #244c87;
+}
+.project p {
+  margin: 6px 0;
+  font-size: 11px;
+  color: #666;
+}
+.note {
+  background: #fffbdc;
+  border: 1px solid #e6d990;
+  padding: 12px;
+  font-size: 11px;
+}
+.hide {
+  display: none !important;
+}
+.max {
+  inset: 0 !important;
+  width: 100% !important;
+  max-width: none !important;
+  height: 100% !important;
+}
+.max .body {
+  height: calc(100% - 151px);
+}

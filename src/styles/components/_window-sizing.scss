@@ -1,0 +1,75 @@
+// Desktop window sizing and corner grips.
+@media (min-width: 721px) {
+  .win {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    max-height: calc(100% - 12px);
+    max-width: calc(100% - 12px);
+    min-width: 420px;
+    min-height: 300px;
+  }
+  .win .title,
+  .win .menu,
+  .win .toolbar,
+  .win .address,
+  .win .status {
+    flex-shrink: 0;
+  }
+  .win .body,
+  .win.max .body {
+    height: auto;
+    flex: 1;
+    min-height: 0;
+  }
+  .win .content {
+    min-width: 0;
+  }
+  .icons {
+    gap: 12px;
+    max-height: 100%;
+    overflow: auto;
+  }
+  .icon {
+    padding: 2px;
+  }
+  .ico {
+    font-size: 30px;
+    margin-bottom: 2px;
+  }
+  .resize-handle {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    z-index: 10;
+    touch-action: none;
+  }
+  .resize-nw {
+    left: 0;
+    top: 0;
+    cursor: nwse-resize;
+  }
+  .resize-ne {
+    right: 0;
+    top: 0;
+    cursor: nesw-resize;
+  }
+  .resize-sw {
+    left: 0;
+    bottom: 0;
+    cursor: nesw-resize;
+  }
+  .resize-se {
+    right: 0;
+    bottom: 0;
+    cursor: nwse-resize;
+    background: repeating-linear-gradient(
+      135deg,
+      transparent 0 3px,
+      #526b9a 3px 4px,
+      transparent 4px 6px
+    );
+    width: 13px;
+    height: 13px;
+  }
+}
